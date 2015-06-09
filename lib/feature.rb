@@ -1,5 +1,6 @@
 class Feature < ActiveRecord::Base
     belongs_to :emo
-    serialize :words, Array
-    serialize :hashtags, Array
+    belongs_to :dict
+    # Label 0: word
+    # Label 1: hashtag
 end

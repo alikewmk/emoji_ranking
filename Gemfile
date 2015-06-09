@@ -16,6 +16,7 @@ gem 'json'
 # Stemming and Tokenization
 gem 'ruby-stemmer'
 gem 'tokenizer'
+gem 'stopwords-filter'
 
 # SVM Ranking
 gem 'rb-libsvm'
