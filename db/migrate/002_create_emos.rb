@@ -19,5 +19,14 @@ class CreateEmos < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+
+    create_table :tweet_features do |t|
+      t.belongs_to :tweet, index:true
+      t.belongs_to :emo, index:true
+      t.text :word_ids
+      t.text :hashtag_ids
+
+      t.timestamps null: false
+    end
   end
 end

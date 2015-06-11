@@ -18,8 +18,9 @@ gem 'ruby-stemmer'
 gem 'tokenizer'
 gem 'stopwords-filter'
 
-# SVM Ranking
+# SVM
 gem 'rb-libsvm'
+gem 'liblinear-ruby'
 
 # Testing
 gem 'rspec'
