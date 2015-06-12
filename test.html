@@ -1,0 +1,61 @@
+<html lang='en'>
+<head>
+  <title>Nyaplot</title>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
+  <script>if(window['d3'] === undefined ||
+   window['Nyaplot'] === undefined){
+    var path = {"d3":"http://d3js.org/d3.v3.min","downloadable":"http://cdn.rawgit.com/domitry/d3-downloadable/master/d3-downloadable"};
+
+
+
+    var shim = {"d3":{"exports":"d3"},"downloadable":{"exports":"downloadable"}};
+
+    require.config({paths: path, shim:shim});
+
+
+require(['d3'], function(d3){window['d3']=d3;console.log('finished loading d3');require(['downloadable'], function(downloadable){window['downloadable']=downloadable;console.log('finished loading downloadable');
+
+	var script = d3.select("head")
+	    .append("script")
+	    .attr("src", "http://cdn.rawgit.com/domitry/Nyaplotjs/master/release/nyaplot.js")
+	    .attr("async", true);
+
+	script[0][0].onload = script[0][0].onreadystatechange = function(){
+
+
+	    var event = document.createEvent("HTMLEvents");
+	    event.initEvent("load_nyaplot",false,false);
+	    window.dispatchEvent(event);
+	    console.log('Finished loading Nyaplotjs');
+
+	};
+
+
+});});
+}
+</script>
+</head>
+<body><div id='vis-005de1d8-d493-42a7-8428-13b71cf356b2'></div>
+<script>
+(function(){
+    var render = function(){
+        var model = {"panes":[{"diagrams":[{"type":"line","options":{"x":"data0","y":"data1","title":"Frequency in training data"},"data":"382529eb-2dd5-49a5-9c15-5c739b22813a"},{"type":"scatter","options":{"x":"data0","y":"data1","shape":["triangle-up"],"color":"#00A37A","title":"Emoji SVM Models"},"data":"5a272262-1754-4812-b8e7-f0c5cbf76191"}],"options":{"legend":true,"y_label":"Precison","x_label":"Frequency (*1000)","zoom":true,"width":800,"xrange":[2.344,16.593],"yrange":[0.0,0.2099644128113879]}}],"data":{"382529eb-2dd5-49a5-9c15-5c739b22813a":[{"data0":16.593,"data1":0.2099644128113879},{"data0":8.016,"data1":0.06796116504854369},{"data0":5.863,"data1":0.012658227848101266},{"data0":4.959,"data1":0.038461538461538464},{"data0":4.315,"data1":0.06153846153846154},{"data0":3.477,"data1":0.05172413793103448},{"data0":2.958,"data1":0.045454545454545456},{"data0":2.86,"data1":0.04},{"data0":2.727,"data1":0.0},{"data0":2.344,"data1":0.043478260869565216}],"5a272262-1754-4812-b8e7-f0c5cbf76191":[{"data0":16.593,"data1":0.005},{"data0":8.016,"data1":0.005},{"data0":5.863,"data1":0.005},{"data0":4.959,"data1":0.005},{"data0":4.315,"data1":0.005},{"data0":3.477,"data1":0.005},{"data0":2.958,"data1":0.005},{"data0":2.86,"data1":0.005},{"data0":2.727,"data1":0.005},{"data0":2.344,"data1":0.005}]},"extension":[]}
+        var id_name = '#vis-005de1d8-d493-42a7-8428-13b71cf356b2';
+        Nyaplot.core.parse(model, id_name);
+
+        require(['downloadable'], function(downloadable){
+          var svg = d3.select(id_name).select("svg");
+	  if(!svg.empty())
+	    svg.call(downloadable().filename('fig'));
+	});
+    };
+    if(window['Nyaplot']==undefined){
+        window.addEventListener('load_nyaplot', render, false);
+	return;
+    } else {
+       render();
+    }
+})();
+</script>
+</body>
+</html>

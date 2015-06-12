@@ -91,19 +91,21 @@ class MultiClassSVM
         count = 0
         true_count = 0
         true_true_count = 0
+        true_false_count = 0
 
         labels.each_with_index do |l, i|
 
             if l == 1
                 true_count += 1
                 true_true_count += 1 if l == result[i]
+                true_false_count += 1 if l != result[i]
             end
 
             count += 1 if l == result[i]
 
         end
 
-        return count, data_num, true_true_count, true_count
+        return count, labels.count, true_true_count, true_count, true_false_count
     end
 
     # add cross validation to Liblinear SVM

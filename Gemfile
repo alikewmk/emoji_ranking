@@ -1,32 +1,31 @@
 # ruby -v 2.1.5
 source 'https://rubygems.org'
 
-# Emoji Unicode Handling
+# emoji unicode handling
 gem 'emoji'
 gem 'emoji_data'
 
 # Twitter API
 gem 'twitter'
 
-# data storage and management
+# database storage and management
 gem 'activerecord'
 gem 'mysql2'
 gem 'json'
 
-# Stemming and Tokenization
+# stemming and tokenization
 gem 'ruby-stemmer'
-gem 'tokenizer'
 gem 'stopwords-filter'
 
 # SVM
 gem 'rb-libsvm'
 gem 'liblinear-ruby'
 
-# Testing
-gem 'rspec'
-
-# Logging
+# logging
 gem 'logger'
 
-# Script
+# console script
 gem 'rake'
+
+# plot
+gem 'nyaplot'

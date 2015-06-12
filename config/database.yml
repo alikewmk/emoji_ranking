@@ -1,6 +1,6 @@
 development:
     adapter: mysql2
     username: root
-    database: emoji_project
+    database: test_emoji_project
     pool: 5
     timeout: 5000

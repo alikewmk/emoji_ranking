@@ -1,0 +1,313 @@
+D, [2015-06-11T19:37:31.601902 #11191] DEBUG -- : 
+-----------------
+D, [2015-06-11T19:37:31.602016 #11191] DEBUG -- : start handling emo 51
+D, [2015-06-11T19:37:31.602038 #11191] DEBUG -- : generating training data...
+D, [2015-06-11T19:37:31.661479 #11191] DEBUG -- : 0
+D, [2015-06-11T19:37:35.735503 #11191] DEBUG -- : 1000
+D, [2015-06-11T19:37:40.056869 #11191] DEBUG -- : 2000
+D, [2015-06-11T19:37:44.940693 #11191] DEBUG -- : 3000
+D, [2015-06-11T19:37:50.032761 #11191] DEBUG -- : 4000
+D, [2015-06-11T19:37:55.656309 #11191] DEBUG -- : 5000
+D, [2015-06-11T19:38:01.845266 #11191] DEBUG -- : 6000
+D, [2015-06-11T19:38:07.947556 #11191] DEBUG -- : 7000
+D, [2015-06-11T19:38:14.448446 #11191] DEBUG -- : 8000
+D, [2015-06-11T19:38:20.809478 #11191] DEBUG -- : 9000
+D, [2015-06-11T19:38:27.205383 #11191] DEBUG -- : 10000
+D, [2015-06-11T19:38:35.380747 #11191] DEBUG -- : 11000
+D, [2015-06-11T19:38:43.518444 #11191] DEBUG -- : 12000
+D, [2015-06-11T19:38:50.830886 #11191] DEBUG -- : 13000
+D, [2015-06-11T19:38:59.825174 #11191] DEBUG -- : 14000
+D, [2015-06-11T19:39:07.822972 #11191] DEBUG -- : 15000
+D, [2015-06-11T19:39:16.859377 #11191] DEBUG -- : 16000
+D, [2015-06-11T19:39:26.234263 #11191] DEBUG -- : 17000
+D, [2015-06-11T19:39:36.183961 #11191] DEBUG -- : 18000
+D, [2015-06-11T19:39:50.214542 #11191] DEBUG -- : 19000
+D, [2015-06-11T19:40:04.520411 #11191] DEBUG -- : 20000
+D, [2015-06-11T19:40:04.521728 #11191] DEBUG -- : training model...
+iter  1 act 1.721e+04 pre 1.706e+04 delta 1.692e+00 f 1.983e+04 |g| 2.034e+04 CG   1
+cg reaches trust region boundary
+iter  2 act -1.483e+02 pre 5.236e+02 delta 7.363e-01 f 2.624e+03 |g| 1.120e+03 CG   3
+cg reaches trust region boundary
+iter  2 act 3.062e+02 pre 3.504e+02 delta 8.669e-01 f 2.624e+03 |g| 1.120e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 1.286e+02 pre 1.370e+02 delta 1.035e+00 f 2.318e+03 |g| 4.187e+02 CG   3
+cg reaches trust region boundary
+iter  4 act 1.118e+02 pre 1.022e+02 delta 1.163e+00 f 2.189e+03 |g| 3.578e+02 CG   4
+cg reaches trust region boundary
+iter  5 act 1.087e+02 pre 1.236e+02 delta 1.196e+00 f 2.077e+03 |g| 3.384e+02 CG   4
+cg reaches trust region boundary
+iter  6 act 1.134e+02 pre 1.056e+02 delta 1.577e+00 f 1.969e+03 |g| 3.727e+02 CG   4
+cg reaches trust region boundary
+iter  7 act 8.527e+01 pre 8.750e+01 delta 1.603e+00 f 1.855e+03 |g| 2.145e+02 CG   4
+cg reaches trust region boundary
+iter  8 act 1.041e+02 pre 1.028e+02 delta 1.826e+00 f 1.770e+03 |g| 2.897e+02 CG   5
+cg reaches trust region boundary
+iter  9 act 7.622e+01 pre 8.125e+01 delta 1.827e+00 f 1.666e+03 |g| 2.365e+02 CG   5
+cg reaches trust region boundary
+iter 10 act 8.676e+01 pre 8.822e+01 delta 2.114e+00 f 1.590e+03 |g| 2.726e+02 CG   5
+cg reaches trust region boundary
+iter 11 act 5.667e+01 pre 6.323e+01 delta 2.114e+00 f 1.503e+03 |g| 1.820e+02 CG   6
+cg reaches trust region boundary
+iter 12 act 6.207e+01 pre 6.484e+01 delta 2.138e+00 f 1.446e+03 |g| 1.979e+02 CG   7
+cg reaches trust region boundary
+iter 13 act 4.441e+01 pre 4.882e+01 delta 2.138e+00 f 1.384e+03 |g| 1.458e+02 CG   7
+cg reaches trust region boundary
+iter 14 act 3.579e+01 pre 3.765e+01 delta 2.149e+00 f 1.340e+03 |g| 1.230e+02 CG   7
+cg reaches trust region boundary
+iter 15 act 2.112e+01 pre 2.555e+01 delta 2.149e+00 f 1.304e+03 |g| 8.100e+01 CG   9
+cg reaches trust region boundary
+iter 16 act 1.778e+01 pre 2.018e+01 delta 2.149e+00 f 1.283e+03 |g| 7.673e+01 CG  11
+D, [2015-06-11T20:23:48.498775 #11191] DEBUG -- : saving model...
+D, [2015-06-11T20:23:48.904337 #11191] DEBUG -- : 
+-----------------
+D, [2015-06-11T20:23:48.904628 #11191] DEBUG -- : start handling emo 82
+D, [2015-06-11T20:23:48.904653 #11191] DEBUG -- : generating training data...
+D, [2015-06-11T20:23:49.608596 #11191] DEBUG -- : 0
+D, [2015-06-11T20:23:57.736286 #11191] DEBUG -- : 1000
+D, [2015-06-11T20:24:02.298019 #11191] DEBUG -- : 2000
+D, [2015-06-11T20:24:07.198813 #11191] DEBUG -- : 3000
+D, [2015-06-11T20:24:12.660762 #11191] DEBUG -- : 4000
+D, [2015-06-11T20:24:18.742240 #11191] DEBUG -- : 5000
+D, [2015-06-11T20:24:24.874457 #11191] DEBUG -- : 6000
+D, [2015-06-11T20:24:31.825247 #11191] DEBUG -- : 7000
+D, [2015-06-11T20:24:38.556658 #11191] DEBUG -- : 8000
+D, [2015-06-11T20:24:45.744585 #11191] DEBUG -- : 9000
+D, [2015-06-11T20:24:53.566247 #11191] DEBUG -- : 10000
+D, [2015-06-11T20:25:01.322751 #11191] DEBUG -- : 11000
+D, [2015-06-11T20:25:09.682378 #11191] DEBUG -- : 12000
+D, [2015-06-11T20:25:20.332872 #11191] DEBUG -- : 13000
+D, [2015-06-11T20:25:31.524371 #11191] DEBUG -- : 14000
+D, [2015-06-11T20:25:42.605477 #11191] DEBUG -- : 15000
+D, [2015-06-11T20:25:55.638388 #11191] DEBUG -- : 16000
+D, [2015-06-11T20:26:07.483700 #11191] DEBUG -- : 17000
+D, [2015-06-11T20:26:19.956904 #11191] DEBUG -- : 18000
+D, [2015-06-11T20:26:31.264467 #11191] DEBUG -- : 19000
+D, [2015-06-11T20:26:45.140941 #11191] DEBUG -- : 20000
+D, [2015-06-11T20:26:45.142692 #11191] DEBUG -- : training model...
+iter  1 act 1.855e+04 pre 1.835e+04 delta 1.760e+00 f 1.983e+04 |g| 2.109e+04 CG   1
+cg reaches trust region boundary
+iter  2 act -4.884e+02 pre 4.320e+02 delta 5.564e-01 f 1.280e+03 |g| 1.330e+03 CG   4
+cg reaches trust region boundary
+iter  2 act 2.557e+02 pre 2.765e+02 delta 6.288e-01 f 1.280e+03 |g| 1.330e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 3.531e+01 pre 7.209e+01 delta 4.359e-01 f 1.024e+03 |g| 3.244e+02 CG   3
+cg reaches trust region boundary
+iter  4 act 5.914e+01 pre 5.945e+01 delta 4.676e-01 f 9.888e+02 |g| 5.256e+02 CG   4
+cg reaches trust region boundary
+iter  5 act 2.658e+01 pre 2.726e+01 delta 5.216e-01 f 9.296e+02 |g| 1.602e+02 CG   3
+cg reaches trust region boundary
+iter  6 act 2.847e+01 pre 2.699e+01 delta 5.622e-01 f 9.031e+02 |g| 1.774e+02 CG   4
+cg reaches trust region boundary
+iter  7 act 3.202e+01 pre 3.252e+01 delta 6.730e-01 f 8.746e+02 |g| 1.778e+02 CG   4
+cg reaches trust region boundary
+iter  8 act 2.916e+01 pre 2.816e+01 delta 7.904e-01 f 8.426e+02 |g| 1.230e+02 CG   3
+cg reaches trust region boundary
+iter  9 act 1.849e+01 pre 2.973e+01 delta 5.794e-01 f 8.134e+02 |g| 1.310e+02 CG   5
+cg reaches trust region boundary
+iter 10 act 3.819e+01 pre 3.693e+01 delta 7.329e-01 f 7.949e+02 |g| 2.039e+02 CG   4
+cg reaches trust region boundary
+iter 11 act 2.052e+01 pre 1.993e+01 delta 9.438e-01 f 7.567e+02 |g| 6.462e+01 CG   3
+cg reaches trust region boundary
+iter 12 act 2.322e+01 pre 2.563e+01 delta 9.438e-01 f 7.362e+02 |g| 1.078e+02 CG   5
+cg reaches trust region boundary
+iter 13 act 2.656e+01 pre 3.035e+01 delta 9.529e-01 f 7.130e+02 |g| 1.555e+02 CG   5
+cg reaches trust region boundary
+iter 14 act 2.539e+01 pre 2.477e+01 delta 1.150e+00 f 6.864e+02 |g| 1.299e+02 CG   5
+cg reaches trust region boundary
+iter 15 act 2.287e+01 pre 2.214e+01 delta 1.503e+00 f 6.611e+02 |g| 8.486e+01 CG   5
+cg reaches trust region boundary
+iter 16 act 1.833e+01 pre 2.137e+01 delta 1.503e+00 f 6.382e+02 |g| 6.503e+01 CG   6
+cg reaches trust region boundary
+iter 17 act 1.844e+01 pre 2.058e+01 delta 1.503e+00 f 6.199e+02 |g| 9.340e+01 CG   7
+cg reaches trust region boundary
+iter 18 act 1.375e+01 pre 1.474e+01 delta 1.503e+00 f 6.014e+02 |g| 7.565e+01 CG   8
+cg reaches trust region boundary
+iter 19 act 7.627e+00 pre 9.487e+00 delta 1.503e+00 f 5.877e+02 |g| 5.201e+01 CG  10
+cg reaches trust region boundary
+iter 20 act 4.584e+00 pre 6.067e+00 delta 1.503e+00 f 5.800e+02 |g| 3.961e+01 CG  13
+D, [2015-06-11T21:10:09.553276 #11191] DEBUG -- : saving model...
+D, [2015-06-11T21:10:09.896038 #11191] DEBUG -- : 
+-----------------
+D, [2015-06-11T21:10:09.897502 #11191] DEBUG -- : start handling emo 19
+D, [2015-06-11T21:10:09.897564 #11191] DEBUG -- : generating training data...
+D, [2015-06-11T21:10:10.335130 #11191] DEBUG -- : 0
+D, [2015-06-11T21:10:18.211712 #11191] DEBUG -- : 1000
+D, [2015-06-11T21:10:22.512913 #11191] DEBUG -- : 2000
+D, [2015-06-11T21:20:10.578271 #11191] DEBUG -- : 3000
+D, [2015-06-11T21:20:19.023790 #11191] DEBUG -- : 4000
+D, [2015-06-11T21:20:24.282085 #11191] DEBUG -- : 5000
+D, [2015-06-11T21:20:29.560832 #11191] DEBUG -- : 6000
+D, [2015-06-11T21:20:35.081212 #11191] DEBUG -- : 7000
+D, [2015-06-11T21:20:40.786450 #11191] DEBUG -- : 8000
+D, [2015-06-11T21:20:47.433667 #11191] DEBUG -- : 9000
+D, [2015-06-11T21:20:54.564851 #11191] DEBUG -- : 10000
+D, [2015-06-11T21:21:01.724058 #11191] DEBUG -- : 11000
+D, [2015-06-11T21:21:09.562161 #11191] DEBUG -- : 12000
+D, [2015-06-11T21:21:17.441954 #11191] DEBUG -- : 13000
+D, [2015-06-11T21:21:26.205246 #11191] DEBUG -- : 14000
+D, [2015-06-11T21:21:35.132679 #11191] DEBUG -- : 15000
+D, [2015-06-11T21:21:45.184375 #11191] DEBUG -- : 16000
+D, [2015-06-11T21:21:54.538276 #11191] DEBUG -- : 17000
+D, [2015-06-11T21:22:04.331126 #11191] DEBUG -- : 18000
+D, [2015-06-11T21:22:15.297058 #11191] DEBUG -- : 19000
+D, [2015-06-11T21:22:26.902856 #11191] DEBUG -- : 20000
+D, [2015-06-11T21:22:26.903297 #11191] DEBUG -- : training model...
+iter  1 act 1.825e+04 pre 1.806e+04 delta 1.745e+00 f 1.983e+04 |g| 2.093e+04 CG   1
+cg reaches trust region boundary
+iter  2 act -3.562e+02 pre 4.998e+02 delta 6.335e-01 f 1.578e+03 |g| 1.273e+03 CG   3
+cg reaches trust region boundary
+iter  2 act 3.082e+02 pre 3.127e+02 delta 8.710e-01 f 1.578e+03 |g| 1.273e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 6.046e+01 pre 1.031e+02 delta 6.593e-01 f 1.270e+03 |g| 2.262e+02 CG   3
+cg reaches trust region boundary
+iter  4 act 8.660e+01 pre 8.192e+01 delta 7.432e-01 f 1.209e+03 |g| 6.341e+02 CG   4
+cg reaches trust region boundary
+iter  5 act 4.627e+01 pre 4.463e+01 delta 7.767e-01 f 1.123e+03 |g| 1.926e+02 CG   3
+cg reaches trust region boundary
+iter  6 act 5.801e+01 pre 5.594e+01 delta 9.944e-01 f 1.076e+03 |g| 2.497e+02 CG   4
+cg reaches trust region boundary
+iter  7 act 5.234e+01 pre 5.065e+01 delta 1.278e+00 f 1.018e+03 |g| 1.558e+02 CG   4
+cg reaches trust region boundary
+iter  8 act 6.611e+01 pre 6.396e+01 delta 1.917e+00 f 9.662e+02 |g| 1.798e+02 CG   4
+cg reaches trust region boundary
+iter  9 act 6.118e+01 pre 6.071e+01 delta 2.233e+00 f 9.000e+02 |g| 1.235e+02 CG   4
+cg reaches trust region boundary
+iter 10 act 6.789e+01 pre 6.601e+01 delta 2.535e+00 f 8.389e+02 |g| 2.040e+02 CG   6
+cg reaches trust region boundary
+iter 11 act 4.204e+01 pre 4.952e+01 delta 2.535e+00 f 7.710e+02 |g| 1.576e+02 CG   6
+cg reaches trust region boundary
+iter 12 act 4.307e+01 pre 4.510e+01 delta 2.535e+00 f 7.289e+02 |g| 1.684e+02 CG   8
+cg reaches trust region boundary
+iter 13 act 1.916e+01 pre 2.362e+01 delta 2.535e+00 f 6.859e+02 |g| 9.085e+01 CG   9
+cg reaches trust region boundary
+iter 14 act 9.750e+00 pre 1.480e+01 delta 1.901e+00 f 6.667e+02 |g| 6.900e+01 CG  15
+iter 15 act 4.295e+00 pre 5.896e+00 delta 9.652e-01 f 6.570e+02 |g| 3.883e+01 CG  18
+D, [2015-06-11T21:51:11.339528 #11191] DEBUG -- : saving model...
+D, [2015-06-11T21:51:11.694708 #11191] DEBUG -- : 
+-----------------
+D, [2015-06-11T21:51:11.694944 #11191] DEBUG -- : start handling emo 3
+D, [2015-06-11T21:51:11.694990 #11191] DEBUG -- : generating training data...
+D, [2015-06-11T21:51:11.993006 #11191] DEBUG -- : 0
+D, [2015-06-11T21:51:20.219137 #11191] DEBUG -- : 1000
+D, [2015-06-11T21:51:25.478391 #11191] DEBUG -- : 2000
+D, [2015-06-11T21:51:30.332101 #11191] DEBUG -- : 3000
+D, [2015-06-11T21:51:35.375411 #11191] DEBUG -- : 4000
+D, [2015-06-11T21:51:40.358889 #11191] DEBUG -- : 5000
+D, [2015-06-11T21:51:45.909792 #11191] DEBUG -- : 6000
+D, [2015-06-11T21:51:53.559583 #11191] DEBUG -- : 7000
+D, [2015-06-11T21:52:03.153523 #11191] DEBUG -- : 8000
+D, [2015-06-11T21:52:17.930661 #11191] DEBUG -- : 9000
+D, [2015-06-11T21:52:34.874196 #11191] DEBUG -- : 10000
+D, [2015-06-11T21:52:52.438058 #11191] DEBUG -- : 11000
+D, [2015-06-11T21:53:11.582859 #11191] DEBUG -- : 12000
+D, [2015-06-11T21:53:31.268429 #11191] DEBUG -- : 13000
+D, [2015-06-11T21:53:59.596125 #11191] DEBUG -- : 14000
+D, [2015-06-11T21:54:28.376483 #11191] DEBUG -- : 15000
+D, [2015-06-11T21:54:39.699578 #11191] DEBUG -- : 16000
+D, [2015-06-11T21:54:50.749014 #11191] DEBUG -- : 17000
+D, [2015-06-11T21:55:03.929980 #11191] DEBUG -- : 18000
+D, [2015-06-11T21:55:16.355754 #11191] DEBUG -- : 19000
+D, [2015-06-11T21:55:29.480548 #11191] DEBUG -- : 20000
+D, [2015-06-11T21:55:29.482043 #11191] DEBUG -- : training model...
+iter  1 act 1.848e+04 pre 1.828e+04 delta 1.756e+00 f 1.983e+04 |g| 2.105e+04 CG   1
+cg reaches trust region boundary
+iter  2 act -1.940e+02 pre 5.625e+02 delta 7.478e-01 f 1.356e+03 |g| 1.355e+03 CG   4
+cg reaches trust region boundary
+iter  2 act 3.029e+02 pre 4.004e+02 delta 7.478e-01 f 1.356e+03 |g| 1.355e+03 CG   2
+cg reaches trust region boundary
+iter  3 act 1.181e+02 pre 1.402e+02 delta 7.478e-01 f 1.053e+03 |g| 6.837e+02 CG   3
+cg reaches trust region boundary
+iter  4 act 6.810e+01 pre 6.389e+01 delta 9.315e-01 f 9.349e+02 |g| 4.261e+02 CG   4
+cg reaches trust region boundary
+iter  5 act 5.329e+01 pre 5.081e+01 delta 1.108e+00 f 8.668e+02 |g| 1.904e+02 CG   4
+cg reaches trust region boundary
+iter  6 act 5.185e+01 pre 4.824e+01 delta 1.198e+00 f 8.135e+02 |g| 2.062e+02 CG   5
+cg reaches trust region boundary
+iter  7 act 4.568e+01 pre 5.039e+01 delta 1.198e+00 f 7.616e+02 |g| 2.215e+02 CG   4
+cg reaches trust region boundary
+iter  8 act 4.314e+01 pre 4.891e+01 delta 1.198e+00 f 7.160e+02 |g| 2.049e+02 CG   5
+cg reaches trust region boundary
+iter  9 act 4.051e+01 pre 3.852e+01 delta 1.301e+00 f 6.728e+02 |g| 1.445e+02 CG   6
+cg reaches trust region boundary
+iter 10 act 1.797e+01 pre 3.026e+01 delta 9.281e-01 f 6.323e+02 |g| 1.026e+02 CG   5
+cg reaches trust region boundary
+iter 11 act 3.495e+01 pre 3.538e+01 delta 9.860e-01 f 6.143e+02 |g| 1.706e+02 CG   6
+cg reaches trust region boundary
+iter 12 act 1.433e+01 pre 1.804e+01 delta 9.860e-01 f 5.794e+02 |g| 6.879e+01 CG   5
+cg reaches trust region boundary
+iter 13 act 1.571e+01 pre 1.705e+01 delta 9.860e-01 f 5.650e+02 |g| 6.639e+01 CG   6
+cg reaches trust region boundary
+iter 14 act 1.514e+01 pre 1.583e+01 delta 1.066e+00 f 5.493e+02 |g| 7.583e+01 CG   6
+cg reaches trust region boundary
+iter 15 act 1.074e+01 pre 1.160e+01 delta 1.076e+00 f 5.342e+02 |g| 5.588e+01 CG   7
+cg reaches trust region boundary
+iter 16 act 7.976e+00 pre 9.883e+00 delta 1.076e+00 f 5.235e+02 |g| 4.736e+01 CG   7
+cg reaches trust region boundary
+iter 17 act -3.388e+00 pre 9.298e+00 delta 4.507e-01 f 5.155e+02 |g| 4.994e+01 CG   8
+cg reaches trust region boundary
+iter 17 act 4.519e+00 pre 5.772e+00 delta 4.507e-01 f 5.155e+02 |g| 4.994e+01 CG   6
+D, [2015-06-11T22:32:49.819531 #11191] DEBUG -- : saving model...
+D, [2015-06-11T22:32:50.225348 #11191] DEBUG -- : 
+-----------------
+D, [2015-06-11T22:32:50.228996 #11191] DEBUG -- : start handling emo 59
+D, [2015-06-11T22:32:50.230396 #11191] DEBUG -- : generating training data...
+D, [2015-06-11T22:32:50.706860 #11191] DEBUG -- : 0
+D, [2015-06-11T22:32:57.861784 #11191] DEBUG -- : 1000
+D, [2015-06-11T22:33:01.835417 #11191] DEBUG -- : 2000
+D, [2015-06-11T22:33:06.179158 #11191] DEBUG -- : 3000
+D, [2015-06-11T22:33:10.841717 #11191] DEBUG -- : 4000
+D, [2015-06-11T22:33:15.850670 #11191] DEBUG -- : 5000
+D, [2015-06-11T22:33:21.253150 #11191] DEBUG -- : 6000
+D, [2015-06-11T22:33:27.204861 #11191] DEBUG -- : 7000
+D, [2015-06-11T22:33:33.494295 #11191] DEBUG -- : 8000
+D, [2015-06-11T22:33:40.300875 #11191] DEBUG -- : 9000
+D, [2015-06-11T22:33:47.273736 #11191] DEBUG -- : 10000
+D, [2015-06-11T22:33:54.676552 #11191] DEBUG -- : 11000
+D, [2015-06-11T22:34:02.528836 #11191] DEBUG -- : 12000
+D, [2015-06-11T22:34:10.736521 #11191] DEBUG -- : 13000
+D, [2015-06-11T22:34:19.307912 #11191] DEBUG -- : 14000
+D, [2015-06-11T22:34:28.338762 #11191] DEBUG -- : 15000
+D, [2015-06-11T22:34:39.535299 #11191] DEBUG -- : 16000
+D, [2015-06-11T22:34:50.121627 #11191] DEBUG -- : 17000
+D, [2015-06-11T22:35:01.682181 #11191] DEBUG -- : 18000
+D, [2015-06-11T22:35:13.610293 #11191] DEBUG -- : 19000
+D, [2015-06-11T22:35:26.400120 #11191] DEBUG -- : 20000
+D, [2015-06-11T22:35:26.400205 #11191] DEBUG -- : training model...
+iter  1 act 1.860e+04 pre 1.839e+04 delta 1.762e+00 f 1.983e+04 |g| 2.112e+04 CG   1
+cg reaches trust region boundary
+iter  2 act -1.204e+02 pre 4.022e+02 delta 7.647e-01 f 1.235e+03 |g| 1.317e+03 CG   3
+cg reaches trust region boundary
+iter  2 act 2.841e+02 pre 2.981e+02 delta 8.974e-01 f 1.235e+03 |g| 1.317e+03 CG   2
+cg reaches trust region boundary
+iter  3 act -1.895e+01 pre 8.479e+01 delta 3.988e-01 f 9.511e+02 |g| 2.664e+02 CG   3
+cg reaches trust region boundary
+iter  3 act 3.948e+01 pre 4.191e+01 delta 4.154e-01 f 9.511e+02 |g| 2.664e+02 CG   2
+cg reaches trust region boundary
+iter  4 act 2.443e+01 pre 3.552e+01 delta 3.353e-01 f 9.116e+02 |g| 2.689e+02 CG   3
+cg reaches trust region boundary
+iter  5 act 3.622e+01 pre 3.663e+01 delta 4.133e-01 f 8.871e+02 |g| 3.258e+02 CG   3
+cg reaches trust region boundary
+iter  6 act 2.965e+01 pre 2.775e+01 delta 7.910e-01 f 8.509e+02 |g| 1.533e+02 CG   3
+cg reaches trust region boundary
+iter  7 act 3.888e+01 pre 4.313e+01 delta 1.027e+00 f 8.213e+02 |g| 1.298e+02 CG   3
+cg reaches trust region boundary
+iter  8 act 5.405e+01 pre 5.334e+01 delta 1.461e+00 f 7.824e+02 |g| 2.524e+02 CG   4
+cg reaches trust region boundary
+iter  9 act 3.023e+01 pre 4.684e+01 delta 1.094e+00 f 7.283e+02 |g| 1.641e+02 CG   5
+cg reaches trust region boundary
+iter 10 act 5.930e+01 pre 5.705e+01 delta 1.212e+00 f 6.981e+02 |g| 3.439e+02 CG   5
+cg reaches trust region boundary
+iter 11 act 3.399e+01 pre 3.124e+01 delta 1.457e+00 f 6.388e+02 |g| 1.408e+02 CG   4
+cg reaches trust region boundary
+iter 12 act 3.033e+01 pre 3.255e+01 delta 1.563e+00 f 6.048e+02 |g| 1.155e+02 CG   5
+cg reaches trust region boundary
+iter 13 act 2.967e+01 pre 2.967e+01 delta 1.814e+00 f 5.745e+02 |g| 1.077e+02 CG   5
+cg reaches trust region boundary
+iter 14 act 2.024e+01 pre 2.293e+01 delta 1.814e+00 f 5.448e+02 |g| 7.897e+01 CG   6
+cg reaches trust region boundary
+iter 15 act 1.624e+01 pre 1.913e+01 delta 1.814e+00 f 5.246e+02 |g| 8.847e+01 CG   7
+cg reaches trust region boundary
+iter 16 act 8.788e+00 pre 1.272e+01 delta 1.395e+00 f 5.084e+02 |g| 7.121e+01 CG   9
+cg reaches trust region boundary
+iter 17 act 6.454e+00 pre 7.719e+00 delta 1.395e+00 f 4.996e+02 |g| 4.492e+01 CG  12
+D, [2015-06-11T23:14:35.488624 #11191] DEBUG -- : saving model...
