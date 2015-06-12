@@ -1,4 +1,4 @@
-# script solely for truncate table
+# script solely to truncate table
 
 require './environment.rb'
 

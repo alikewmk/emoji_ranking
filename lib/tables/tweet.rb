@@ -1,3 +1,4 @@
+require 'twitter'
 require 'zlib'
 require 'json'
 
@@ -6,7 +7,7 @@ class Tweet < ActiveRecord::Base
     has_many :tweet_features
 
     DATA_DIR = "/Users/wmk/Dropbox/ohsu_homeworks/IR/Project/twitter_emoji/data/*.gz"
-    DATE = Time.now - 1.year
+    DATE = Date.new(2014,1,1).to_time
 
     def self.pull_data(data_num)
         i = 0
@@ -29,26 +30,26 @@ class Tweet < ActiveRecord::Base
         end
     end
 
-    # pull data from local computer, deprecated
-    # def self.pull_2015_data()
-    #     client = Twitter::Streaming::Client.new do |config|
-    #       config.consumer_key        = "zmVbzavTCzNaZrtSIcIELOIPA"
-    #       config.consumer_secret     = "HdftzlPdeSI2UH6rsNXP8PcgZHY5m5zTY7HM07TQ87GREyS6w9"
-    #       config.access_token        = "145053175-4B6cWR15HkALu82x1GZD0zhXmnoAFCNKqC8mMvg4"
-    #       config.access_token_secret = "gsXtrHWF0tI90kH6Cgzo0DyOMKhjHLsDqsiM5By67OYIX"
-    #     end
+    # pull data from local computer
+    def self.pull_2015_data()
+        client = Twitter::Streaming::Client.new do |config|
+          config.consumer_key        = "XXX"
+          config.consumer_secret     = "XXX"
+          config.access_token        = "XXX"
+          config.access_token_secret = "XXX"
+        end
 
-    #     i = 0
-    #     client.sample({language: 'en'}) do |object|
-    #         if object.is_a?(Twitter::Tweet)
-    #             if EmojiData.scan(object.text) != []
-    #                 Tweet.create(text: object.text, source: object.source, create_time: Time.now)
-    #                 i += 1
-    #                 print i.to_s + "\n"
-    #             end
-    #         end
-    #     end
-    # end
+        i = 0
+        client.sample({language: 'en'}) do |object|
+            if object.is_a?(Twitter::Tweet)
+                if EmojiData.scan(object.text) != []
+                    Tweet.create(text: object.text, source: object.source, create_time: Time.now)
+                    i += 1
+                    print i.to_s + "\n"
+                end
+            end
+        end
+    end
 
     # get 2013 tweets collection
     def self.tweets_2013()

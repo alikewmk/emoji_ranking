@@ -4,7 +4,6 @@ require 'rubygems'
 require 'active_record'
 require 'mysql2'
 require 'yaml'
-require 'twitter'
 require 'emoji_data'
 
 # add directory to default ruby file load path

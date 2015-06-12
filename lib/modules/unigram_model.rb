@@ -1,14 +1,15 @@
 # basic unigram model
 require 'set'
 
-class UnigramModel
+module UnigramModel
 
-    def get_feature(tweet)
+    def self.get_feature(tweet)
         t = tweet.tweet_features.first
         return t.word_ids + t.hashtag_ids
     end
 
-    def get_rank(tweet)
+    # rank word by entropy
+    def self.get_rank(tweet)
 
         # get words and hashtags sequence
         feats = get_feature(tweet)
@@ -47,7 +48,7 @@ class UnigramModel
             end
 
             cross_entropy = log_prob/len_feats
-            emo_entropies << [emo_id, cross_entropy]#, Emo.find(emo_id).text]
+            emo_entropies << [emo_id, cross_entropy] #, Emo.find(emo_id).text]
         end
 
         return emo_entropies.sort_by{ |en| en[1] }

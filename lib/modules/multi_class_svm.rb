@@ -4,19 +4,17 @@ require 'logger'
 
 # should the tweet_feature be distinct in tweet id?
 #
-class MultiClassSVM
+module MultiClassSVM
 
-    attr_accessor :logger
+    class << self; attr_accessor :logger; end
 
-    def initialize()
-        $stdout.sync = true
-        @logger = Logger.new $stdout
-        @logger.level = Logger::DEBUG
-    end
+    $stdout.sync = true
+    @logger = Logger.new $stdout
+    @logger.level = Logger::DEBUG
 
     # one vs all approach
     # TODO: maybe try one vs one?
-    def liblinear_ova_train(emo, data_num)
+    def self.liblinear_ova_train(emo, data_num)
         param = Liblinear::Parameter.new
         # might need to change this
         param.solver_type = Liblinear::L2R_L2LOSS_SVC
@@ -37,7 +35,7 @@ class MultiClassSVM
         linear_model.save("models/"+ emo.id.to_s + "_model")
     end
 
-    def gen_ova_data(emo, data_num)
+    def self.gen_ova_data(emo, data_num)
 
         len_dict = Dict.count
 
@@ -76,7 +74,7 @@ class MultiClassSVM
         return labels, data
     end
 
-    def evaluate_ova_model(emo, data_num, model_file)
+    def self.evaluate_ova_model(emo, data_num, model_file)
 
         l_model = Liblinear::Model.new(model_file)
         labels, testing_data = gen_ova_data(emo, data_num)
@@ -118,7 +116,7 @@ class MultiClassSVM
     # might be useful in the future
     # notice data should not only include two document ids
     # other features should also be considered
-    def gen_rank_data(init_rank, refer_rank)
+    def self.gen_rank_data(init_rank, refer_rank)
         labels = []
         data   = []
 
@@ -142,7 +140,7 @@ class MultiClassSVM
     end
 
     # libsvm approach, take too long to train on large scale data
-    def libsvm_train()
+    def self.libsvm_train()
         ### Train
         problem = Libsvm::Problem.new
         parameter = Libsvm::SvmParameter.new
@@ -200,7 +198,7 @@ class MultiClassSVM
     end
 
     # multi class approach, not working, never fit the data
-    def liblinear_mc_train(features)
+    def self.liblinear_mc_train(features)
         param = Liblinear::Parameter.new
         # might need to change this
         param.solver_type = Liblinear::L2R_LR
@@ -219,7 +217,7 @@ class MultiClassSVM
         # linear_model.predict([])
     end
 
-    def gen_mc_train(features)
+    def self.gen_mc_train(features)
         len_dict = Dict.count
 
         training_data = []

@@ -2,7 +2,6 @@
 source 'https://rubygems.org'
 
 # emoji unicode handling
-gem 'emoji'
 gem 'emoji_data'
 
 # Twitter API
