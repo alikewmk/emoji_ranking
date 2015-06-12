@@ -16,10 +16,10 @@ class MultiClassSVM
 
     # one vs all approach
     # TODO: maybe try one vs one?
-    def liblinear_ova_train(emo)
+    def liblinear_ova_train(emo, data_num)
         param = Liblinear::Parameter.new
         # might need to change this
-        param.solver_type = Liblinear::L2R_L2LOSS_SVC_DUAL
+        param.solver_type = Liblinear::L2R_L2LOSS_SVC
         param.C = 1
         bias    = 0.5
 
@@ -27,7 +27,7 @@ class MultiClassSVM
         @logger.debug("start handling emo " + emo.id.to_s)
 
         @logger.debug("generating training data...")
-        labels, training_data = gen_ova_data(emo)
+        labels, training_data = gen_ova_data(emo, data_num)
 
         @logger.debug("training model...")
         prob = Liblinear::Problem.new(labels, training_data, bias)
@@ -37,20 +37,22 @@ class MultiClassSVM
         linear_model.save("models/"+ emo.id.to_s + "_model")
     end
 
-    def gen_ova_data(emo)
+    def gen_ova_data(emo, data_num)
+
         len_dict = Dict.count
-        dict_feat = Array.new(len_dict){0}
 
         labels = []
         data = []
 
-        Tweet.find_each.with_index do |tweet, idx|
+        Tweet.tweets_2015().find_each.with_index do |tweet, idx|
 
             # show current process
             @logger.debug(idx.to_s) if idx%1000 == 0
 
+            break if idx == data_num
+
             # TODO: maybe choose the one with less frequent emo?
-            feat     = tweet.tweet_features.first
+            feat = tweet.tweet_features.first
 
             next if feat.nil?
 
@@ -67,6 +69,7 @@ class MultiClassSVM
 
             dict_feat = Array.new(len_dict){0}
             feat_val.each{|i| dict_feat[i-1] = 1 }
+
             data << dict_feat
         end
 
@@ -81,13 +84,14 @@ class MultiClassSVM
         result = []
 
         testing_data.each_with_index do |item, idx|
-            p idx
+            p idx if idx%1000 == 0
             result << l_model.predict(item)
         end
 
         count = 0
         true_count = 0
         true_true_count = 0
+
         labels.each_with_index do |l, i|
 
             if l == 1
@@ -107,6 +111,33 @@ class MultiClassSVM
     ###################################################################
     #######################  deprecated  ##############################
     ###################################################################
+
+    # my intuition implementation of ranking data generation
+    # might be useful in the future
+    # notice data should not only include two document ids
+    # other features should also be considered
+    def gen_rank_data(init_rank, refer_rank)
+        labels = []
+        data   = []
+
+        init_rank.combination(2).to_a.each do |pair_rank|
+
+            # compare prior rank with post rank
+            # and assign label based on result
+            prior = refer_rank.index(pair_rank[0])
+            post  = refer_rank.index(pair_rank[1])
+
+            if prior_idx >= post_idx
+                labels << 1
+            else
+                labels << -1
+            end
+
+            data << pair_rank
+        end
+
+        return labels, data
+    end
 
     # libsvm approach, take too long to train on large scale data
     def libsvm_train()
